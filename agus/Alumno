@@ -1,0 +1,23 @@
+package agus;
+
+public class Alumno {
+
+    private String[] alumnos = {"Martinez Rayo Iris Madai", "Melendez Mendoza Vicente Angel", "Melgoza Vazquez Lilia Sutsuy", "Morales Ruiz Joseline Arel", "Peralta Robles Karina Estefania", "Peñaloza Arrollo Israel Juda", "Ramirez Alvarado Jose Armando", "Riquelme Abarca Esmeralda America", "Sánchez Cortés Francisco Agustín", "Santamaria Vera Iris Itzel"
+    ,"Soto Carrion Luis Enrique","Tapia Sánchez Marco Antonio", "Tatacoya Julian", "Villanueva Ahumada Kate", "Villanueva Flores Erick Jared"};
+    private String[] noControl = {"18680165", "18680172", "19680193", "18680177", "18680189", "19680224", "19680231", "19680236", "19680255", "17680227"
+    ,"17680236","18680754", "19680262", "17680246", "19680902"};
+    private int[] calificacion = {10, 10, 7, 8, 6, 8, 9, 10, 5, 6, 8, 8, 9, 10, 7};
+    
+    String[] getAlumnos(){
+        return alumnos;
+    }
+    
+    String[] getMatricula(){
+        return noControl;
+    }
+    
+    int[] getCalificacion(){
+        return calificacion;
+    }
+    
+}
