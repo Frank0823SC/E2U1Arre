@@ -1,0 +1,96 @@
+package agus;
+import java.util.Scanner;
+public class Agus {
+
+    public static void main(String[] args) {
+        
+        System.out.println("Bienvenido al sistema, elija una opción:\n");
+        System.out.println("1. Selecciona los primeros 5 alumnos");
+        System.out.println("2. Selecciona todos los alumnos");
+        System.out.println("3. Selecciona los últimos 5 alumnos");
+        System.out.println("4. Salir");
+        
+        Alumno al;
+        Scanner sc = new Scanner(System.in);
+        
+        int res = sc.nextInt();
+        
+        do{
+        
+            switch(res){
+            
+                case 1:
+                    
+                    for(int i=0; i<=4; i++){
+                        
+                        al = new Alumno();
+                        
+                        System.out.println("No. De control: "+al.getMatricula()[i]+", Alumno: "+al.getAlumnos()[i]+", Calificación: "+al.getCalificacion()[i]);
+                        
+                    }
+                    
+                    System.out.println("\n1. Selecciona los primeros 5 alumnos");
+                        System.out.println("2. Selecciona todos los alumnos");
+                        System.out.println("3. Selecciona los últimos 5 alumnos");
+                        System.out.println("4. Salir");
+                    
+                    res = sc.nextInt();
+                    
+                    break;
+                    
+                case 2: 
+                    
+                    al = new Alumno();
+                    
+                    for(int i=0; i<=14; i++){
+                    
+                        System.out.println("No. De control: "+al.getMatricula()[i]+", Alumno: "+al.getAlumnos()[i]+", Calificación: "+al.getCalificacion()[i]);                        
+                    }
+                    
+                    System.out.println("\n1. Selecciona los primeros 5 alumnos");
+                        System.out.println("2. Selecciona todos los alumnos");
+                        System.out.println("3. Selecciona los últimos 5 alumnos");
+                        System.out.println("4. Salir");
+                    
+                    res = sc.nextInt();
+                    
+                    break;
+                    
+                case 3:
+                    
+                    for(int i=10; i<=14; i++){
+                        
+                        al = new Alumno();
+                        
+                        System.out.println("No. De control: "+al.getMatricula()[i]+", Alumno: "+al.getAlumnos()[i]+", Calificación: "+al.getCalificacion()[i]);                        
+                    }
+                    
+                    System.out.println("\n1. Selecciona los primeros 5 alumnos");
+                        System.out.println("2. Selecciona todos los alumnos");
+                        System.out.println("3. Selecciona los últimos 5 alumnos");
+                        System.out.println("4. Salir");
+                    
+                    res = sc.nextInt();
+                    
+                    break;
+                    
+                case 4:
+                    System.out.println("Ha salido");
+                    break;
+                    
+                default: 
+                    System.out.println("Escriba bien jeje");
+                    
+                     System.out.println("\n1. Selecciona los primeros 5 alumnos");
+                        System.out.println("2. Selecciona todos los alumnos");
+                        System.out.println("3. Selecciona los últimos 5 alumnos");
+                        System.out.println("4. Salir");
+                        res = sc.nextInt();
+                        
+            }
+        
+        }while(res<=3 && res>0);
+        
+    }
+    
+}
